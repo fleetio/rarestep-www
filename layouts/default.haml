@@ -19,5 +19,31 @@
   / El Modernizr
   %script{ src: '/js/libs/modernizr-2.0.6.min.js' }
 %body
+  #container
+    #sidebar
+      #top
+        / El Logo
+        %img{ src: '/images/company_name.jpg', alt: 'Company' }
+        
+        %ul.menu.unstyled
+          %li.home.active 
+            %a{ href: '#' }
+              Home
+          %li.team 
+            %a{ href: '#' }
+              Team
+          %li.portfolio 
+            %a{ href: '#' }
+              Portfolio
+          %li.contact 
+            %a{ href: '#' }
+              Contact Us
+      
+      %footer
+        %p
+          &copy; 2011 RareStep, LLC. All Rights Reserved.
+      
+    = yield
+    
   = render_partial 'javascripts'
   = content_for(:javascript)

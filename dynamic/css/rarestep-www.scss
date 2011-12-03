@@ -1,0 +1,108 @@
+@import "bootstrap/bootstrap.scss";
+
+body {
+	background: url(/images/background.jpg) center repeat-y;
+}
+
+#container {
+	margin: 0 auto;
+	width: 960px;
+}
+
+// === Sidebar ===
+#sidebar {
+	margin-top: 22px;
+	float: left;
+	overflow: hidden;
+	width: 272px;
+	
+	#top {
+  	position: fixed;
+  }
+  
+  // === Logo ===
+	img {
+		padding: 5px 10px;
+	}
+	
+	// === Menu ===
+	ul.menu {
+		margin-top: 50px;
+		
+		li {
+		  a {
+		    color: #3e3e3e;
+		    display: block;
+    		text-decoration: none;
+    		text-transform: uppercase;
+    		font-size: 13px;
+    		font-weight: bold;
+    		padding: 9px 10px 9px 30px;
+    		margin-bottom: 1px;
+    		width: 225px;
+		  }
+		  
+		  &.active {
+		    a {
+		      background-color: #3e3e3e;
+		      @include border-radius(2px);
+		      color: #f0f0f0;
+		    }
+		  }
+  	}
+	}
+	
+}
+
+// === Content ===
+#content {
+	float: left;
+	width: 688px;
+}
+
+// === Panel Header ===
+.panel_header {
+	height: 70px;
+	background: #f0f0f0;
+	border-top: 1px solid #d5d5d5;
+	border-bottom: 1px solid #d5d5d5;
+	border-right: 1px solid #d5d5d5;
+	padding-top: 90px;
+	overflow: hidden;
+	
+	h2 {
+  	float: left;
+  	margin: 23.5px 0px 23.5px 60px;
+  }
+  
+  ul {
+  	list-style: none;
+  	float: right;
+  	margin: 23.5px;
+  	
+  	li {
+  	  line-height: 1;
+  	  
+  	  img {
+    	  padding: 0px 5px 3px 5px;
+  	  }
+    }
+  }
+}
+
+// === Panel Header ===
+.panel {
+	margin: 60px 60px 500px 60px;
+	overflow: hidden;
+}
+
+// === Footer ===
+footer {
+	position: fixed;
+	bottom: 10px;
+	
+	p {
+	  color: #A6A5A5;
+  	font-size: $basefont - 1;
+	}
+}
