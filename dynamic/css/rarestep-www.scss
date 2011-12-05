@@ -48,6 +48,7 @@ hr {
 	
 	// === Menu ===
 	ul.menu {
+	  @extend .unstyled;
 		margin-top: 85px;
 		
 		li {
@@ -95,18 +96,18 @@ hr {
 	}
   
   .arrows {
+    @extend .unstyled;
+    margin-top: 10px;
   	text-align: right;
-  	
-  	ul {
-  	  margin-top: 10px;
-  	}
-  	
+  	  	
   	li {
   	  line-height: 1;
   	  
-  	  img {
-    	  padding: 0px 5px 3px 5px;
+  	  a {
+  	    display: block;
+  	    padding: 0px 5px 1px 5px;
   	  }
+  	  
     }
   }
 }

@@ -4,10 +4,11 @@
       .span9
         %h1#hi
           We make remarkably useful<br/> web-based software.
-      .span1.arrows
-        %ul.unstyled
-          %li.next.team
-            %img{ src: '/images/down.jpg', alt: 'next' }
+      .span1
+        %ul.arrows
+          %li
+            %a{ href: '#work' }
+              %img{ src: '/images/down.jpg', alt: 'next' }
         
   .panel
     %p.lead#love
@@ -48,13 +49,15 @@
       .span9
         %h1
           Our Work
-      .span1.arrows
-        %ul.unstyled
-          %li.previous.home
-            %img{ src: '/images/up.jpg', alt: 'up' }
-          %li.next.products
-            %img{ src: '/images/down.jpg', alt: 'next' }
-        
+      .span1
+        %ul.arrows
+          %li
+            %a{ href: '#home' }
+              %img{ src: '/images/up.jpg', alt: 'prev' }
+          %li
+            %a{ href: '#contact' }
+              %img{ src: '/images/down.jpg', alt: 'next' }
+                
   .panel
     .row
       .span7
@@ -90,10 +93,11 @@
       .span9
         %h1
           Contact Us
-      .span1.arrows
-        %ul.unstyled
-          %li.previous.home
-            %img{ src: '/images/up.jpg', alt: 'up' }
+      .span1
+        %ul.arrows
+          %li
+            %a{ href: '#work' }
+              %img{ src: '/images/up.jpg', alt: 'prev' }
         
   .panel
     %p= lorem.paragraph
