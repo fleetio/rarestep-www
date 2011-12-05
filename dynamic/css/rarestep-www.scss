@@ -36,7 +36,7 @@ hr {
 
 // === Sidebar ===
 #sidebar {
-	margin-top: 65px;
+	padding-top: 80px;
 	float: left;
 	overflow: hidden;
 	width: 272px;
@@ -92,7 +92,15 @@ hr {
 	border-top: 1px solid #d5d5d5;
 	border-bottom: 1px solid #d5d5d5;
 	border-right: 1px solid #d5d5d5;
-	padding: 60px 0 0 40px;
+	padding: 75px 0 0 40px;
+	
+	#home & {
+	  padding-top: 55px; // #home h1 is two lines
+	}
+	
+	#contact & {
+	  padding-top: 60px; // #contact h1 has extra padding for #hi icon
+	}
 	
 	h1 {
 	  font-size: 40px;
@@ -119,7 +127,15 @@ hr {
 // === Panel Header ===
 .panel {
   @include fixed-container();
-  padding: 60px 10px 500px 30px;
+  padding: 60px 10px 600px 30px;
+  
+  #home & {
+    padding-bottom: 300px;
+  }
+  
+  #work & {
+    padding-bottom: 500px;
+  }
 }
 
 // === Media Grids ===

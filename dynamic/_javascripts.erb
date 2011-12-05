@@ -10,7 +10,7 @@
     $.scrollTo( 0 );
     
     // ScrollTo animation	
-		$(".menu a, .arrows a").click(function(el, e) {
+		$(".menu a, .arrows a, #logo").click(function(el, e) {
 		  var target = $(this).attr('href');
 		  var position = $(target).position();
 		  $.scrollTo({ top: position.top, left: 0}, 500);
