@@ -1,21 +1,72 @@
 #content
   #home.panel_header
-    %h2 Something good here.
-    %ul.unstyled
-      %li.next.team
-        %img{ src: '/images/down.jpg', alt: 'next' }
+    .row
+      .span9
+        %h1#hi
+          We make remarkably useful<br/> web-based software.
+      .span1.arrows
+        %ul.unstyled
+          %li.next.team
+            %img{ src: '/images/down.jpg', alt: 'next' }
+        
+  .panel
+    %p.lead#love
+      We're passionate about making peoples' lives better by building elegant solutions to 
+      their problems.
+    
+    %hr/
+  
+    %p.lead#experts
+      We're experts in designing and developing web applications and websites. We make things people
+      actually enjoy using by focusing on simplicity and usability.
+      
+    %hr/
+    
+    %h6 The RareStep Approach
+    
+    .row
+      .span5
+        %h4#design User Experience &amp; Interface Design
+        %p
+          Websites &amp; software shouldn't be hard to use. Problem is, it's not that easy to take a 
+          complex problem and boil it down to a simple solution.
+        %p
+          We design simple, intuitive user experiences that are both functional and beautiful. We 
+          never settle for less. That's what makes us unique.
+      .span5
+        %h4#develop Website &amp; Application Development
+        %p
+          We architect, design and implement elaborate websites and scalable web applications in less 
+          time with fewer resources. We get things done.
+        %p
+          We favor user feedback over heavy process, and emphasize continuous software releases 
+          through small iterations.
+  
+  
+  #work.panel_header
+    .row
+      .span9
+        %h1
+          Our Work
+      .span1.arrows
+        %ul.unstyled
+          %li.previous.home
+            %img{ src: '/images/up.jpg', alt: 'up' }
+          %li.next.products
+            %img{ src: '/images/down.jpg', alt: 'next' }
         
   .panel
     %p= lorem.paragraph
     
-  
-  #products.panel_header
-    %h2 Our wonderful products.
-    %ul.unstyled
-      %li.previous.home
-        %img{ src: '/images/up.jpg', alt: 'up' }
-      %li.next.products
-        %img{ src: '/images/down.jpg', alt: 'next' }
+  #contact.panel_header
+    .row
+      .span9
+        %h1
+          Contact Us
+      .span1.arrows
+        %ul.unstyled
+          %li.previous.home
+            %img{ src: '/images/up.jpg', alt: 'up' }
         
   .panel
     %p= lorem.paragraph

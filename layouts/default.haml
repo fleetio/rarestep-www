@@ -15,7 +15,9 @@
   %meta{ name: 'viewport', content: 'width=device-width,initial-scale=1' }
   
   / El Styles
-  %link{ rel: 'stylesheet', type: 'text/css', href: '/css/rarestep-www.css', media: 'all' }
+  %link{ href: 'http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Cabin:700', rel: 'stylesheet', type: 'text/css', media: 'all' }
+  %link{ href: '/css/rarestep-www.css', rel: 'stylesheet', type: 'text/css', media: 'all' }
+  
   / El Modernizr
   %script{ src: '/js/libs/modernizr-2.0.6.min.js' }
 %body
@@ -23,7 +25,7 @@
     #sidebar
       #top
         / El Logo
-        %img{ src: '/images/company_name.jpg', alt: 'Company' }
+        %img{ src: '/images/rarestep_logo.png', alt: 'RareStep' }
         
         %ul.menu.unstyled
           %li.home.active 
@@ -31,10 +33,7 @@
               Home
           %li.team 
             %a{ href: '#' }
-              Team
-          %li.portfolio 
-            %a{ href: '#' }
-              Portfolio
+              Our Work
           %li.contact 
             %a{ href: '#' }
               Contact Us
