@@ -56,7 +56,34 @@
             %img{ src: '/images/down.jpg', alt: 'next' }
         
   .panel
-    %p= lorem.paragraph
+    .row
+      .span7
+        %p
+          %a{ href: 'http://www.fleetio.com', title: 'Fleetio - Fleet Maintenance Software' }
+            %img{ src: '/images/fleetio_logo.png', width: '218', height: '56', alt: 'Fleetio Logo' }
+        %p
+          %a{ href: 'http://www.fleetio.com', title: 'Fleetio - Fleet Maintenance Software' }
+            Fleetio
+          is a fleet management software system that makes it easy to manage vehicles.
+        %p
+          Any business or organization with a fleet can use Fleetio to keep track of preventative 
+          maintenance &amp; service, manage fuel expenses and keep all vehicle details in one place.
+        %p
+          Fleetio is a RareStep product that we conceived, built and launched.
+      .span3
+        %ul.media-grid
+          %li
+            %a{ href: '/images/fleetio_1_full.png', :rel => 'colorbox' }
+              %img{ class: 'thumbnail', src: '/images/fleetio_1_thumb.png', width: '160', height: '105' }
+          %li
+            %a{ href: '/images/fleetio_2_full.png', :rel => 'colorbox' }
+              %img{ class: 'thumbnail', src: '/images/fleetio_2_thumb.png', width: '160', height: '104' }
+      
+    -#
+      %hr/
+    
+      %p
+        STARTUP SUMMIT
     
   #contact.panel_header
     .row
