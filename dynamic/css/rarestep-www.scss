@@ -19,6 +19,10 @@ p {
   margin-bottom: $baseline;
 }
 
+li {
+  color: inherit;
+}
+
 hr {
   // border-bottom: 1px dotted #808080;
   border-bottom: 1px solid #D4D4D4;
@@ -143,7 +147,7 @@ footer {
 }
 
 #hi {
-  background: transparent url("/images/hi.png") 96% 0 no-repeat;
+  background: transparent url("/images/hi.png") 200px 0 no-repeat;
   padding-top: 15px;
 }
 

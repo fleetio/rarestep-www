@@ -2,7 +2,7 @@
   #home.panel_header
     .row
       .span9
-        %h1#hi
+        %h1
           We make remarkably useful<br/> web-based software.
       .span1
         %ul.arrows
@@ -91,7 +91,7 @@
   #contact.panel_header
     .row
       .span9
-        %h1
+        %h1#hi
           Contact Us
       .span1
         %ul.arrows
@@ -100,4 +100,41 @@
               %img{ src: '/images/up.jpg', alt: 'prev' }
         
   .panel
-    %p= lorem.paragraph
+    .row
+      .span6
+        %h6 RareStep
+        
+        %ul.unstyled
+          %li
+            Phone:
+            %strong
+              1-800-975-5304
+          %li
+            Email:
+            %a{ href: 'mailto:hello@rarestep.com', title: 'Email us' }
+              hello@rarestep.com
+          %li
+            Twitter:
+            %a{ href: 'http://twitter.com/rarestep', title: 'Follow RareStep on Twitter' }
+              @rarestep
+              
+        %h6 Fleetio
+        
+        %ul.unstyled
+          %li
+            Support Email:
+            %a{ href: 'mailto:help@fleetio.com', title: 'Contact Fleetio Support' }
+              help@fleetio.com
+          %li
+            Twitter:
+            %a{ href: 'http://twitter.com/fleetio', title: 'Follow Fleetio on Twitter' }
+              @fleetio
+      
+      .span4
+        %address
+          %strong
+            RareStep, LLC
+          %br/
+          414 Edgewood Blvd.
+          %br/
+          Birmingham, AL 35209
