@@ -253,25 +253,43 @@
                   <script src="/js/libs/jquery.colorbox-min.js"></script>
                   
                   <script>
-                    $(function() {
-                      $("a[rel='colorbox']").colorbox();
-                      $.scrollTo( 0 );
-                      
-                      // ScrollTo animation	
-                  		$(".menu a, .arrows a, #logo").click(function(el, e) {
-                  		  var target = $(this).attr('href');
-                  		  var position = $(target).position();
-                  		  $.scrollTo({ top: position.top, left: 0}, 500);
-                  		});
-                    });
+                  $(function() {
+                    $("a[rel='colorbox']").colorbox();
+                    $.scrollTo( 0 );
+                    
+                    // ScrollTo animation	
+                  	$(".menu a, .arrows a, #logo").click(function(el, e) {
+                  	  var target = $(this).attr('href');
+                  	  var position = $(target).position();
+                  	  $.scrollTo({ top: position.top, left: 0}, 500);
+                  	});
+                  });
                   </script>
                   
                   <script>
-                    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
-                    Modernizr.load({
-                    load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-                    });
+                  window._gaq = [['_setAccount','UA-22994822-4'],['_trackPageview'],['_trackPageLoadTime']];
+                  Modernizr.load({
+                  load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+                  });
                   </script>
+                  
+                  <script type="text/javascript">
+                  function woopraReady(tracker) {
+                      tracker.setDomain('rarestep.com');
+                      tracker.setIdleTimeout(300000);
+                      tracker.track();
+                      return false;
+                  }
+                  (function() {
+                      var wsc = document.createElement('script');
+                      wsc.src = document.location.protocol+'//static.woopra.com/js/woopra.js';
+                      wsc.type = 'text/javascript';
+                      wsc.async = true;
+                      var ssc = document.getElementsByTagName('script')[0];
+                      ssc.parentNode.insertBefore(wsc, ssc);
+                  })();
+                  </script>
+                  
                   
                   <!--[if lt IE 7 ]>
                     <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
